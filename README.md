@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Receipt Scanner 🧾
 
-## Getting Started
+A modern web application to scan receipts, extract data automatically, and track your spending. Built with Next.js and Tesseract.js.
 
-First, run the development server:
+![Smart Receipt Scanner Banner](https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1000)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **📸 Instant Receipt Scanning**: Upload receipt images and let the app extract details automatically.
+- **🤖 Client-Side OCR**: Uses **Tesseract.js** to run OCR directly in your browser. No data leaves your device!
+- **🧠 Smart Analysis**:
+  - Automatically detects **Merchant Name**, **Total Amount**, and **Date**.
+  - Intelligent **Category Classification** (Food, Transport, Utilities, etc.) based on keywords.
+- **📊 Spending Dashboard**:
+  - Visual breakdown of expenses by category.
+  - Monthly budget tracking.
+  - Recent transactions list.
+- **💾 Local Storage**: Data is persisted in your browser's local storage.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **OCR**: [Tesseract.js](https://tesseract.projectnaptha.com/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Monametsi-s/smart-receipt-scanner.git
+   cd smart-receipt-scanner
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **Open the app**:
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 How to Use
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Dashboard**: The home page shows your monthly spending summary.
+2. **Scan Receipt**:
+   - Click the **+** button.
+   - Upload a receipt image (JPG, PNG).
+   - Wait for the OCR engine to analyze the text.
+   - Verify the detected Merchant, Total, and Category.
+   - Click **Save Receipt**.
+3. **Track Budget**: Watch your spending progress bar on the dashboard!
+
+## 🤝 Credits
+
+Based on the Python concept `idea.py` for a Receipt Scanner & Budget Analyzer.
+Ported to a full-stack web application by **Antigravity**.
